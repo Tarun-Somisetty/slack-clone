@@ -25,7 +25,7 @@ def send_messages(client_socket):
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 print("About to connect")
 
-client.connect((os.getenv("NLB_DN"), os.getenv("NLB_PORT")))
+client.connect((os.getenv("NLB_DN"), int(os.getenv("NLB_PORT"))))
 print("Connection established")
 
 
