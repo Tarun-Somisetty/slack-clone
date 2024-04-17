@@ -30,7 +30,7 @@ def handle_client(client_socket):
         print(f"Client {identifier} disconnected")
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-server.bind(('34.226.219.185', 80))
+server.bind(('172.31.37.250', 80))
 server.listen(10)
 
 while True:
